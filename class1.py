@@ -9,7 +9,8 @@ class Person:
         print("My name is {0}".format(self.name))
 
 p1 = Person()
-p1.print()
+p2 = Person()
 
 p1.name = "EJ"
 p1.print()
+p2.print()
