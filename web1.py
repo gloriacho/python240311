@@ -8,6 +8,7 @@ soup = BeautifulSoup(page, "html.parser")
 #print(soup.prettify())
 #print(soup.find_all("a"))
 #print(soup.find("p"))
+print(soup.find(id="first"))
 
 for tag in soup.find_all("p"):
     title = tag.text.strip()
@@ -17,4 +18,4 @@ for tag in soup.find_all("p"):
 #print(soup.find_all("p", class_="outer-text"))
 #attrs
 #print(soup.find_all("p", attrs={"class"="outer-text"}))
-print(soup.find_all("p", attrs={"class":"outer-text"}))
+#print(soup.find_all("p", attrs={"class":"outer-text"}))
